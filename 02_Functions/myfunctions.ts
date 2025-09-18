@@ -44,6 +44,15 @@ heros.map((hero): string => {
 })
 
 
+function consoleError(errmsg: string): void {
+    console.log(errmsg);
+}
+
+function handleError(errmsg: string): never {
+    throw new Error(errmsg);
+}
+
+
 addTwo(5)
 
 getUpper("hello")
