@@ -1,6 +1,6 @@
-function addTwo(num: number) {
-    // return num + 2
-    return "hello"    // isn't this a problem ??
+function addTwo(num: number) : number {
+    return num + 2
+    // return "hello"   
 }
 
 function getUpper(val: string) {
