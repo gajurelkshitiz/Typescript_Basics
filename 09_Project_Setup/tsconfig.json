@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2017",   // set the JS Language version for emitted JS and include compatible library declaration
+    "module": "commonjs",   // specify what module code is generated.
+    "outDir": "./dist",     // specify an output folder for all emitted files.
+    "esModuleInterop": true,    // Emit additional Javascript to ease support for importing commonJS. This enables 'allowSyntheticDefaultImports' for type compatibility.
+    "forceConsistentCasingInFileNames": true,   // Ensures that casing is correct in imports
+    "strict": true,   // Enable all strict type-checking options.
+    "skipDefaultLibCheck": true,   // skip type checking all .d.ts files.
+  }
+}
