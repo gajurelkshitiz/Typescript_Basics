@@ -17,7 +17,9 @@ console.log('typescript is amazing');
 // <--------------- PROFESSIONALLY DEFINING CLASSES --------------------->:
 class User {
 
-    private _courseCount = 1;
+    // private _courseCount = 1;    --> since private variables are not accessible to sub-classes
+
+    protected _courseCount = 1;
 
     readonly city: string = "Biratnagar"
     constructor(
@@ -48,6 +50,16 @@ class User {
         this._courseCount = courseNum
     }
 }
+
+
+class SubUser extends User {
+    isFamily: boolean = true;
+    changeCourseCount (){
+        this._courseCount = 3;
+    }
+
+}
+
 
 const kshitiz = new User("kshitiz@gmail.com", "kshitiz");
 kshitiz.city        // it is readable is i use 'readonly city: string = "Biratnagar" '
